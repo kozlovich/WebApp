@@ -101,6 +101,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebApp.EF\WebApp.EF.csproj">
+      <Project>{23BBFA1E-645F-4CEA-A099-52B7F5C210C1}</Project>
+      <Name>WebApp.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApp.Services\WebApp.Services.csproj">
+      <Project>{79e695a4-d876-46bb-bae5-6eb14160f892}</Project>
+      <Name>WebApp.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebApp\WebApp.csproj">
       <Project>{489BED2C-4588-431E-AFF1-B5FB148E7432}</Project>
       <Name>WebApp</Name>

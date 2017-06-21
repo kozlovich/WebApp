@@ -44,5 +44,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users\UserService.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApp.EF\WebApp.EF.csproj">
+      <Project>{23BBFA1E-645F-4CEA-A099-52B7F5C210C1}</Project>
+      <Name>WebApp.EF</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

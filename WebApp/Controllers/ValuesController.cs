@@ -4,11 +4,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApp.Services.Users;
 
 namespace WebApp.Controllers
 {
     public class ValuesController : ApiController
     {
+        protected IUserService UserService { get; private set; }
+        public ValuesController(IUserService userService)
+        {
+            this.UserService = userService;
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -18,7 +25,7 @@ namespace WebApp.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            return "value";
+            return UserService.GetHelloWorld();
         }
 
         // POST api/values
